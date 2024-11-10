@@ -26,7 +26,7 @@ include:
   
   # USB / BLE Dongle with Display
   - board: seeeduino_xiao_ble
-    shield: dongle dongle_display
+    shield: dongle
 
   # PMW3610 Trackball
   - board: seeeduino_xiao_ble
