@@ -16,7 +16,7 @@ manifest:
       revision: feat/pointers-with-input-processors # feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: sadekbaroudie
+      remote: sadekbaroudi
       revision: main
     - name: zmk-rgbled-widget
       remote: caksoylar
