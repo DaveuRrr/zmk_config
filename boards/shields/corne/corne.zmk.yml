@@ -1,0 +1,16 @@
+file_format: "1"
+id: corne
+name: Corne
+type: shield
+url: https://github.com/daveurrr/zmk_config
+requires: [pro_micro]
+#exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - pointer
+siblings:
+  - corne_left
+  - corne_right
+  - dongle
+  - sideball

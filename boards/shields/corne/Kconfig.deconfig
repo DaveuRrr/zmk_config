@@ -1,0 +1,34 @@
+if SHIELD_DONGLE
+
+config ZMK_KEYBOARD_NAME
+    default "Corne"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default y
+
+config ZMK_USB
+    default y
+
+config ZMK_MOUSE
+    default y
+
+endif
+
+if SHIELD_SIDEBALL
+
+config SPI
+    default y
+endif
+
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_DONGLE || SHIELD_SIDEBALL
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_BLE
+    default y
+
+config ZMK_MOUSE
+    default y
+
+endif

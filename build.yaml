@@ -18,7 +18,22 @@
 #
 ---
 include:
+  # Corne Keyboard with Nice!View Displays
   - board: nice_nano_v2
-    shield: corne_left
+    shield: corne_left nice_view_adapter nice_view
   - board: nice_nano_v2
-    shield: corne_right
+    shield: corne_right nice_view_adapter nice_view
+  
+  # USB / BLE Dongle with Display
+  - board: seeeduino_xiao_ble
+    shield: dongle_xiao dongle_displayl
+
+  # PMW3610 Trackball
+  - board: seeeduino_xiao_ble
+    shield: sideball
+
+  # Settings Reset
+  - board: nice_nano_v2
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
