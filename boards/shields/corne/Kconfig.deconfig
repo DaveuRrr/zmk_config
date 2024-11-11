@@ -1,7 +1,7 @@
 if SHIELD_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Corne"
+    default "Corne BLE"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
     default y
@@ -17,7 +17,7 @@ endif
 if SHIELD_SIDEBALL
 
 config ZMK_KEYBOARD_NAME
-    default "sideball"
+    default "Sideball"
 
 config SPI
     default y
