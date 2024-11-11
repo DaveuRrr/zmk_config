@@ -12,6 +12,10 @@ config ZMK_USB
 config ZMK_MOUSE
     default y
 
+choice ZMK_DISPLAY_WORK_QUEUE
+    default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
+endchoice
+
 endif
 
 if SHIELD_SIDEBALL
