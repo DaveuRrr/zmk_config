@@ -3,7 +3,7 @@ id: corne
 name: Corne
 type: shield
 url: https://github.com/daveurrr/zmk_config
-requires: [seeeduino_xiao_ble] # [pro_micro]
+requires: [seeeduino_xiao_ble, pro_micro]
 exposes: [i2c_oled]
 features:
   - keys
