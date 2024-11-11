@@ -21,17 +21,19 @@ include:
   # Corne Keyboard with Nice!View Displays
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Left\"
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
-  
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Right\"
   # USB / BLE Dongle with Display
   - board: seeeduino_xiao_ble
     shield: dongle
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Dongle\"
   
   # PMW3610 Trackball
   - board: seeeduino_xiao_ble
     shield: sideball
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sideball\"
 
   # Settings Reset
   - board: nice_nano_v2
