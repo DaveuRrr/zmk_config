@@ -27,8 +27,8 @@ include:
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Right\"
   # USB / BLE Dongle with Display
   - board: seeeduino_xiao_ble
-    shield: dongle dongle_display
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Dongle\"
+    shield: corne_dongle dongle_display
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle\"
   
   # PMW3610 Trackball
   - board: seeeduino_xiao_ble
