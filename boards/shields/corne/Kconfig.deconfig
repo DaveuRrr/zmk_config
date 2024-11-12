@@ -8,10 +8,7 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 config ZMK_USB
     default y
-
-config ZMK_MOUSE
-    default y
-
+    
 endif
 
 if ZMK_DISPLAY
@@ -75,9 +72,6 @@ config ZMK_SPLIT
     default y
 
 config ZMK_BLE
-    default y
-
-config ZMK_MOUSE
     default y
 
 endif
