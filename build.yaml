@@ -26,7 +26,7 @@ include:
     shield: corne_right nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Right\"
   # USB / BLE Dongle with Display
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2 # seeeduino_xiao_ble
     shield: corne_dongle dongle_display
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle\"
   
