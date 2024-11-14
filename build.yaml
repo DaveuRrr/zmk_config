@@ -26,14 +26,14 @@ include:
     shield: corne_right nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Right\"
   # USB / BLE Dongle with Display
-  - board: nice_nano_v2 # seeeduino_xiao_ble
-    shield: corne_dongle dongle_display
+  - board: seeeduino_xiao_ble
+    shield: corne_dongle_xiao dongle_display
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle\"
   
   # PMW3610 Trackball
-  - board: seeeduino_xiao_ble
-    shield: sideball rgbled_adapter
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sideball\"
+  #- board: seeeduino_xiao_ble
+  #  shield: sideball rgbled_adapter
+  #  cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Sideball\"
 
   # Settings Reset
   - board: nice_nano_v2
