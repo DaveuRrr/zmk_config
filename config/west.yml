@@ -6,10 +6,10 @@ manifest:
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    # - name: sadekbaroudi
+    #   url-base: https://github.com/sadekbaroudi
+    # - name: caksoylar
+    #   url-base: https://github.com/caksoylar
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
@@ -17,12 +17,12 @@ manifest:
       remote: zmkfirmware
       revision: feat/pointers-with-input-processors # feat/pointers-move-scroll
       import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: sadekbaroudi
-      revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
+    # - name: zmk-pmw3610-driver
+    #   remote: sadekbaroudi
+    #   revision: main
+    # - name: zmk-rgbled-widget
+    #   remote: caksoylar
+    #   revision: main
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
