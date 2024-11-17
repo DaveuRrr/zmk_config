@@ -31,10 +31,10 @@ include:
     shield: corne_dongle_xiao dongle_display
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"XIAO_Dongle\"
 
-  - board: nice_nano_v2
-    shield: corne_dongle_pro_micro dongle_display
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle\"
-    artifact-name: nice_corne_dongle_pro_micro_dongle_display
+  #- board: nice_nano_v2
+  #  shield: corne_dongle_pro_micro dongle_display
+  #  cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Nice_Dongle\"
+  #  artifact-name: nice_corne_dongle_pro_micro_dongle_display
 
   # PMW3610 Trackball
   #- board: seeeduino_xiao_ble
