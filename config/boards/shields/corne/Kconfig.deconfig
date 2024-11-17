@@ -1,15 +1,17 @@
-if SHIELD_CORNE_DONGLE
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
 
 config ZMK_KEYBOARD_NAME
     default "Corne BLE"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    default y
-
-config ZMK_USB
+config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
+
+if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_CORNE_LEFT_PERIPHERAL || SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
+
+config ZMK_SPLIT
+    default y
 
 if ZMK_DISPLAY
 
@@ -19,11 +21,15 @@ config I2C
 config SSD1306
     default y
 
+if SHIELD_CORNE_DONGLE_XIAO || SHIELD_CORNE_DONGLE_PRO_MICRO
+
 choice ZMK_DISPLAY_WORK_QUEUE
     default ZMK_DISPLAY_WORK_QUEUE_DEDICATED
 endchoice
 
 endif
+
+endif # ZMK_DISPLAY
 
 if LVGL
 
@@ -40,38 +46,4 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif
-
-if SHIELD_SIDEBALL
-
-config ZMK_KEYBOARD_NAME
-    default "Sideball"
-
-config SPI
-    default y
-
-endif
-
-if SHIELD_CORNE_LEFT
-
-config ZMK_KEYBOARD_NAME
-    default "Corne Left"
-
-endif
-
-if SHIELD_CORNE_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "Corne Right"
-
-endif
-
-if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_CORNE_DONGLE || SHIELD_SIDEBALL
-
-config ZMK_SPLIT
-    default y
-
-config ZMK_BLE
-    default y
-
-endif
+endif # LVGL
