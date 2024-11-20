@@ -1,11 +1,11 @@
+# Copyright (c) 2020 Pete Johanson
+# SPDX-License-Identifier: MIT
+
 config SHIELD_CORNE_LEFT
     def_bool $(shields_list_contains,corne_left)
 
 config SHIELD_CORNE_RIGHT
     def_bool $(shields_list_contains,corne_right)
 
-config SHIELD_CORNE_DONGLE
-    def_bool $(shields_list_contains,corne_dongle)
-
-config SHIELD_SIDEBALL
-    def_bool $(shields_list_contains,sideball)
+config SHIELD_CORNE_DONGLE_PRO_MICRO
+    def_bool $(shields_list_contains,corne_dongle_pro_micro)
