@@ -29,11 +29,11 @@ include:
   # USB / BLE Dongle with Display
   - board: seeeduino_xiao_ble
     shield: corne_dongle_xiao # dongle_display
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle_Xiao\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle_X\"
 
   - board: nice_nano_v2
     shield: corne_dongle_pro_micro
-    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle_Nice\"
+    cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle_N\"
     artifact-name: nice_corne_dongle_pro_micro
 
   # PMW3610 Trackball
