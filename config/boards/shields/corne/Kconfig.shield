@@ -9,3 +9,6 @@ config SHIELD_CORNE_RIGHT
 
 config SHIELD_CORNE_DONGLE_PRO_MICRO
     def_bool $(shields_list_contains,corne_dongle_pro_micro)
+
+config SHIELD_CORNE_DONGLE_XIAO
+    def_bool $(shields_list_contains,corne_dongle_xiao)
