@@ -13,13 +13,13 @@ if SHIELD_CORNE_LEFT || SHIELD_CORNE_RIGHT || SHIELD_CORNE_DONGLE_PRO_MICRO || S
 config ZMK_SPLIT
     default y
 
-#if ZMK_DISPLAY
+if ZMK_DISPLAY
 
-#config I2C
-#    default y
+config I2C
+    default y
 
-#config SSD1306
-#    default y
+config SSD1306
+    default y
 
 if SHIELD_CORNE_DONGLE_PRO_MICRO || SHIELD_CORNE_DONGLE_XIAO
 
@@ -29,7 +29,7 @@ endchoice
 
 endif
 
-#endif # ZMK_DISPLAY
+endif # ZMK_DISPLAY
 
 if LVGL
 

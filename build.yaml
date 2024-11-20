@@ -28,7 +28,7 @@ include:
 
   # USB / BLE Dongle with Display
   - board: seeeduino_xiao_ble
-    shield: corne_dongle_xiao # dongle_display
+    shield: corne_dongle_xiao dongle_display
     cmake-args: -DCONFIG_ZMK_KEYBOARD_NAME=\"Corne_Dongle_X\"
 
   - board: nice_nano_v2
